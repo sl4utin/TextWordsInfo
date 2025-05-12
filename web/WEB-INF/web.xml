@@ -1,8 +1,19 @@
-<servlet>
-    <servlet-name>SearchServlet</servlet-name>
-    <servlet-class>code.lab4.SearchServlet</servlet-class>
-</servlet>
-<servlet-mapping>
-<servlet-name>SearchServlet</servlet-name>
-<url-pattern>/search</url-pattern>
-</servlet-mapping>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>code.lab4.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>code.lab4.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+</web-app>
